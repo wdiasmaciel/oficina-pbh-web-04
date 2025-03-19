@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while</title>
+</head>
+
+<body>
+    Número: <input type="number" id="numero" class="entrada">
+    <button onclick="processar()">OK</button>
+    <div id="resp" class="resposta">
+
+    </div>
+
+    <script>
+        /*
+          Função.
+          Estrutura de repetição: while.
+          Entrada/saída de dados.
+          Variável.
+        */
+
+        function processar() {
+            var i = 0, num = parseInt(document.getElementById("numero").value);
+            
+            while (i < num) {
+                document.getElementById("resp").innerHTML += i + "<br>";
+                i++;
+            }
+        }
+    </script>
+</body>
+
+</html>
