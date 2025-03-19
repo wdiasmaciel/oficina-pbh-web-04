@@ -11,6 +11,11 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
+        .entrada {
+            width: 40rem;
+            margin: 2rem auto;
+        }
+
         input {
             padding: .3rem;
             text-align: right;
@@ -51,10 +56,11 @@
 </head>
 
 <body>
-    Número: <input type="number" id="numero" class="entrada">
-    <button onclick="processar()">OK</button>
-    <div id="resp" class="resposta">
-
+    <div class="entrada">
+        Número: <input type="number" id="numero">
+        <button onclick="processar()">OK</button>
+        <div id="resp" class="resposta">
+        </div>
     </div>
 
     <script>
@@ -66,9 +72,9 @@
         */
 
         function processar() {
-            var i = 0, num = parseInt(document.getElementById("numero").value);
-            
-            while (i < num) {
+            var i = 1, num = parseInt(document.getElementById("numero").value);
+
+            while (i <= num) {
                 document.getElementById("resp").innerHTML += `<div class="item">${i}</div>`;
                 i++;
             }
