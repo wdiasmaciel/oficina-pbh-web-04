@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            width: 30rem;
+            height: 20rem;
+            margin: 2rem auto;
+            border: 1px solid #a3a0a0;
+            box-shadow: 0.5rem .5rem .3rem .01rem #a3a0a0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <script>
+            /*
+               Estrutura condicional (seleção): switch-case.
+               Variável
+               Entrada/saída de dados.
+            */
+            var produto = prompt("Informe o produto");
+
+            switch (produto.toLowerCase()) {
+                case "arroz":
+                    document.write("<div class='produto'>Você escolheu arroz.</div>");
+                    document.write("<div class='preco'>Valor: R$ 8,99</div>");
+                    break;
+                case "feijao":
+                    document.write("<div class='aviso'>A palavra 'feijão' tem ~.</div>");
+                case "feijão":
+                    document.write("<div class='produto'>Você escolheu feijão.</div>");
+                    document.write("<div class='preco'>Valor: R$ 6,79</div>");
+                    break;
+                case "cafe":
+                    document.write("<div class='aviso'>A palavra 'café' tem ´.</div>");
+                //break;
+                case "café":
+                    document.write("<div class='produto'>Você escolheu café.</div>");
+                    document.write("<div class='preco'>Valor: R$ 18,95</div>");
+                    break;
+                default:
+                    document.write("<div class='erro'>Produto não identificado!</div>");
+            }
+        </script>
+    </div>
+</body>
+
+</html>
