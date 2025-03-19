@@ -59,27 +59,27 @@
     <div class="entrada">
         Número: <input type="number" id="numero">
         <button onclick="processar()">OK</button>
-        <div id="resp" class="resposta">
-        </div>
     </div>
 
-    <script>
-        /*
-          Função.
-          Estrutura de repetição: while.
-          Entrada/saída de dados.
-          Variável.
-        */
+    <div id="resp" class="resposta">
+        <script>
+            /*
+              Função.
+              Estrutura de repetição: while.
+              Entrada/saída de dados.
+              Variável.
+            */
 
-        function processar() {
-            var i = 1, num = parseInt(document.getElementById("numero").value);
+            function processar() {
+                var i = 1, num = parseInt(document.getElementById("numero").value);
 
-            while (i <= num) {
-                document.getElementById("resp").innerHTML += `<div class="item">${i}</div>`;
-                i++;
+                while (i <= num) {
+                    document.getElementById("resp").innerHTML += `<div class="item">${i}</div>`;
+                    i++;
+                }
             }
-        }
-    </script>
+        </script>
+    </div>
 </body>
 
 </html>
